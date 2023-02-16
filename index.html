@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Form</title>
+    
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body, div, h1, h2, h3, h4, h5, h6, p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #0A2239;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #FFFFFF;
+            margin-left: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: 400;
+            color: #D3924A;
+            margin-left: 24px;
+            margin-bottom: 24px;
+            }
+
+        main {
+            margin-left: 48px;           
+        }
+
+        .form label {
+            color: #D3924A;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            }
+
+        input[type=text] {
+            width: 260px;
+            max-width: 100%;
+            padding: 12px;
+            border: 2px solid #CE791B;
+            border-radius: 6px;
+            background-color:#FFFFFF;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            color: #5A5858;
+            }
+
+        input[type=number] {
+            width: 260px;
+            max-width: 100%;
+            padding: 12px;
+            border: 2px solid #CE791B;
+            border-radius: 6px;
+            background-color:#FFFFFF;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            color: #5A5858;
+            }
+
+        input[type=email] {
+            width: 260px;
+            max-width: 100%;
+            padding: 12px;
+            border: 2px solid #CE791B;
+            border-radius: 6px;
+            background-color:#FFFFFF;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            color: #5A5858;
+            }
+                        
+        input[type=file] {
+            max-width: 100%;
+            margin-top: 6px;
+            border-radius: 2px;
+            color: #A69C9C;
+            margin-bottom: 40px;
+            }
+        
+        textarea {
+            width: 260px;
+            max-width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #FFFFFF;
+            border: 2px solid #CE791B;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            }
+            
+        input[type=submit] {
+            max-width: 100%;
+            padding: 12px 32px;
+            background: #CE791B;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            color: #FFF6F1;
+        }
+
+        footer {
+            max-width: 100%;
+            background-color: black;
+            height: auto;
+            padding-top: 20px;
+        }
+
+        .copyright {
+            margin: 0;
+            color: #FFFFFF;
+            text-decoration-line: underline;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Apply for the position</h1>
+    <p>Fill the form below with your information.</p>
+    
+    <main>
+
+        <form class="form">
+            <label for="fname">Name</label>
+            <br>
+            <input type="text" placeholder="Enter your name" id="fname" name="fname" value="">
+            <br>
+            <label for="lname">Lastname</label>
+            <br>
+            <input type="text" placeholder="Enter your lastname" id="lname" name="lname" value="">
+            <br>
+            <label for="phone">Phone</label>
+            <br>
+            <input type="number" placeholder="Enter your phone" id="phone" name="phone" value="">
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" placeholder="Enter your email" id="email" name="email" value="">
+            <br>
+            <label for="file">Upload your CV</label>
+            <br>
+            <input type="file" id="file" name="file">
+            <br>
+            <label for="subject">Subject</label>
+            <br>
+            <input type="text" placeholder="Enter subject" id="subject" name="subject" value="">
+            <br>
+            <label for="message">Add massage</label>
+            <br>
+            <textarea placeholder="Enter your massage" rows="14" cols="24" id="message" name="message"></textarea>
+            <br>
+            <input type="checkbox" name="emailnotify" id="emailnotify">
+            <label for="emailnotify">Notify me by email</label>
+            <br>
+            <input type="submit" value="Apply">
+        </form>      
+
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; HTML & CSS for this Aplly form made by Miroslav Mlinarcek</p>
+    </footer>
+
+</body>
+</html>
